@@ -1,0 +1,14 @@
+
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> List of Articles </h3>
+        <div class = "articles-card">
+            <p-paginator [rows]="5" [totalRecords]="articles.length" (onPageChange)="paginate($event)"></p-paginator>
+            <app-article-item *ngFor = "let article of articlesChunk;" [article]="article" >
+            </app-article-item>
+        </div>
+        <div class = "post-card">
+            <app-article-post></app-article-post>
+        </div>
+    </div>
+</div>

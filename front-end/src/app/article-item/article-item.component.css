@@ -1,0 +1,13 @@
+.article-item {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 30px;
+    margin: 10px;
+}
+
+button {
+    border-color: grey;
+    margin: 5px;
+}
+

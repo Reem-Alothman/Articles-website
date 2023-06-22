@@ -1,0 +1,20 @@
+<div class="article-item">
+<h4> {{ article.title}}</h4>
+<p> {{ article.body}}</p>
+<p> Author: {{article.username}}</p>
+<p> Date: {{article.createdAt.substring(0, article.createdAt.indexOf("T"))}}</p>
+<p> Likes: {{article.likes}}, Dislikes: {{article.dislikes}}</p>
+<p-button styleClass="p-button-text" icon="pi pi-thumbs-up" (click)="like(article)"></p-button>
+<p-button styleClass="p-button-text" icon="pi pi-thumbs-down" (click)="dislike(article)"></p-button>
+<p-button styleClass="p-button-text" icon="pi pi-eye-slash" (click)="disable(article)"></p-button>
+<p-button styleClass="p-button-text" icon="pi pi-trash" (click)="delete(article)"></p-button>
+<h6>Comments:</h6>
+<ul>
+    <li *ngFor = "let comment of article.comments;" >{{comment.username}}: {{comment.comment}}</li>
+</ul>
+<form (ngSubmit)="submitComment(article.artID, comment)">
+    <input type="text" name="comment" [(ngModel)]="comment" placeholder="add your comment">
+    <input type="submit" value="Submit" >
+</form>
+</div>
+

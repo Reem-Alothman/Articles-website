@@ -1,0 +1,14 @@
+div{
+    color: aliceblue;
+    background-color:darkslategray;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: aliceblue;
+    padding-inline: 5px;
+}
+
+

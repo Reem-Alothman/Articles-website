@@ -1,0 +1,10 @@
+<form (ngSubmit)="submitArticle()">
+    <h4>Post your article</h4>
+    <h6>Title</h6>
+    <input type="text" name="title" [(ngModel)]="title">
+    <br>
+    <h6>Body</h6>
+    <textarea name =body rows="7" cols="50" pInputTextarea [(ngModel)]="body"></textarea>
+    <br><br>
+    <input type="submit" value="Submit" >
+</form>

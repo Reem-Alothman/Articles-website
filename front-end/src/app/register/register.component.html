@@ -1,0 +1,16 @@
+<form (ngSubmit)="submitRegister()">
+    <h5>Username</h5>
+    <input type="text" name="username" [(ngModel)]="username">
+    <br>
+    <h5>Password</h5>
+    <input type="text" name="password" [(ngModel)]="password">
+    <br>
+    <h5>Email</h5>
+    <input type="text" name="email" [(ngModel)]="email">
+    <br>
+    <h5>Mobile number</h5>
+    <input type="number" name="mobileNumber" [(ngModel)]="mobileNumber">
+    <br>
+    <br>
+    <input type="submit" value="Submit" >
+</form>
